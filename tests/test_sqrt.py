@@ -25,7 +25,7 @@ def test_sqrt_cuadrado_perfecto():
 #         sqrt(-4)
 
 
-@pytest.mark.parameterize("raiz, esperado", [
+@pytest.mark.parametrize("raiz, esperado", [
     (0, 0.0),
     (2, 1.414213562373095)
     
