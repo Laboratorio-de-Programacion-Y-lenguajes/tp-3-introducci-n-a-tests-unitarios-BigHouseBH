@@ -23,3 +23,22 @@ def test_mean_lista_simple():
 # def test_mean_lista_vacia():
 #     with pytest.raises(ValueError):
 #         mean([])
+
+
+
+
+
+
+#Nota:Mean=promedio
+
+@pytest.mark.parametrize("lista, esperado", [
+    ([5], 5.0),
+    ([-1, -2, -3], -2.0),
+    ([1.5, 2.5, 3.5], 2.5),
+])
+def testMean(lista, esperado):
+    assert mean(lista) == esperado
+
+def testMeanListaVacia():
+    with pytest.raises(ValueError):#captura y retorna ValueError(hablando en java)
+        mean([])#Si try con lista vacia
