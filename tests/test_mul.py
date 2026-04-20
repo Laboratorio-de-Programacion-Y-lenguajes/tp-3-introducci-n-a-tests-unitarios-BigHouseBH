@@ -20,3 +20,15 @@ def test_mul_positivos():
 #   - Multiplicar dos decimales (float)
 #
 # Pista: podés usar @pytest.mark.parametrize para probar varios casos a la vez.
+
+#Ante de iniciar, aprendi el funcionamiento de pytest.mark.parametrize
+#Al parecer es un  metodo con la estrucutra estandar de un test
+#Con los variables listas para cargarles valores del test
+#junto al retorno esperado para dicho test,
+#de modo que reutiliza el mismo algoritmo multiples veces
+# #con la coleccion de test que se le carga en vectores
+
+#Conceptualmente @pytest.mark.parametrize:
+#void conceptualPytestMarkParametrize(int a, int b, int esperado) {
+#    assert funcionEjemplo(a, b) == esperado;
+#}
