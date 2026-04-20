@@ -1,6 +1,7 @@
 """Tests para la función sqrt(x) -> float."""
 
 import pytest
+import math
 
 from src.calculator import sqrt
 
@@ -22,3 +23,19 @@ def test_sqrt_cuadrado_perfecto():
 # def test_sqrt_negativo():
 #     with pytest.raises(ValueError):
 #         sqrt(-4)
+
+
+@pytest.mark.parametrize("raiz, esperado", [
+    (0, 0.0),
+    (2, 1.414213562373095)
+    
+    
+])
+def testSqrt(raiz, esperado):
+    math.sqrt(raiz)
+    
+def testValueError():
+    with pytest.raises(ValueError):
+        sqrt(-4)
+
+    
