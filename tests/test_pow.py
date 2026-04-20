@@ -27,7 +27,7 @@ def test_pow_base_positiva():
     (-2, 4, 16),         # X>=0 y E%2=0 => X^E >= 0
     (9, 0.5, 3),         # E<1 => X^E  = raíz(E) de X
 ])
-def testPow(X, E, esperado):
-    assert pow_(X, E) == esperado
+def testPow(base, exponente, esperado):
+    assert pow_(base, exponente) == esperado
     
     
