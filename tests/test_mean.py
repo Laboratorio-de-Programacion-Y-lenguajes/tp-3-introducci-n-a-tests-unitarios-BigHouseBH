@@ -29,7 +29,7 @@ def test_mean_lista_simple():
 
 
 
-#Nota:Mean=promedio
+#Nota:mean=promedio
 
 @pytest.mark.parametrize("lista, esperado", [
     ([5], 5.0),
